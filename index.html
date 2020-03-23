@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../survey-form/styles/myStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Sans+TC&display=swap" rel="stylesheet">
+    <title>mySwoleCamp Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">mySwoleCamp Survey Form</h1>
+            <p id="description">Help your brothers be more swole</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label">Name</label>
+                <input type="input" class="form-input" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label">Email</label>
+                <input type="email" class="form-input" name="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label">Age(optional)</label>
+                <input type="number" id="number" class="form-input" name="age" id="age" min="10" max="90" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your body type</p>
+                <select id="dropdown" class="form-input">
+                    <option disabled selected value>Select body type</option>
+                    <option value="mesomorph">Mesomorph</option>
+                    <option value="ectomorph">Ectomorph</option>
+                    <option value="endomorph">Endomorph</option>
+                </select>             
+            </div>
+            <div class="form-group">
+                <p>Do you think you are Swole?</p>
+               <label><input type="radio" class="radio-input" name="swole-answer" value="Yeah-baby" checked>Yeah baby</label> 
+                <label><input type="radio" class="radio-input" name="swole-answer" value="Nah,-bruh">Nah,bruh</label>
+                <label><input type="radio" class="radio-input" name="swole-answer" value="Gotta-check-the-mirror">Gotta check the mirror</label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite feature of mySwoleCamp</p>
+                <select id="fav-feature-dropdown" class="form-input">
+                    <option disabled selected value>Select an option</option>
+                    <option value="exercise-list">Exercise List</option>
+                    <option value="articles">Articles</option>
+                    <option value="videos">Videos</option>
+                </select>    
+            </div>
+            <div class="form-group">
+                <p>What improvements would you like to see in out site?<span class="tip">(Check all that apply)</span></p>
+                <label><input type="checkbox" class="improvement-checkbox" name="improvement" value="more-exercise-variety">More exercise variety</label>
+                <label><input type="checkbox" class="improvement-checkbox" name="improvement" value="more-exercise-videos">More exercise videos</label>
+                <label><input type="checkbox" class="improvement-checkbox" name="improvement" value="frequently-post">Post more frequently</label>
+            </div>
+            <div class="form-group">
+                <p>Any additional comments you would like to add?</p>
+                <textarea id="comments" class="input-textarea" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

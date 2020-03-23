@@ -1,0 +1,97 @@
+/* Base Styles -------------------- */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-image: linear-gradient( 115deg, rgba(5, 5, 5, 0.8), rgba(104, 104, 136, 0.158) ),url("https://images.squarespace-cdn.com/content/v1/55b721b2e4b0da1a567c47b1/1452812308531-DJT31GSBFKC6Y99ZR5JN/ke17ZwdGBToddI8pDm48kHTHJlACqy9PR67J39ATHOp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UfZ1qQlCBU8D8HwMSx19XWWhZWoAraqJt_ybhixA0kzVDVfRxgAIsQ7eQiOnQS3C_Q/health-and-fitness-wallpaper-backgrounds-1.jpg?format=2500w");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: 'Noto Sans KR', 'Noto Sans TC', sans-serif;
+    font-size: 1.2em;
+}
+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+  }
+
+/* Main Styles --------------------- */
+
+.header{
+    text-align: center;
+}
+
+#title{
+    text-shadow: 0 0 5px #998b8b;
+}
+
+.container{
+    margin: 20px auto 20px auto;
+    width: 100%;
+}
+
+#survey-form{
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 12px;
+    background-color: rgba(8, 6, 6, 0.83);
+    padding: 15px;
+}
+
+.form-input{
+    margin: auto;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-group{
+    padding: 0.5em;
+    margin: 0 auto 1em auto;
+}
+
+.radio-input{
+    margin-right: 0.8em;
+}
+
+.input-textarea{
+    min-height: 100px;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    height: 120px;
+}
+
+#description{
+    font-style: italic;
+}
+
+#submit{
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+
+/* Media Queries -------------------- */
+@media(min-width: 576px){
+    .container{
+    max-width: 540px;
+    }
+}
+@media(min-width: 768px){
+    .container{
+    max-width: 720px;
+    }
+}
